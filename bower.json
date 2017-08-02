@@ -1,0 +1,22 @@
+{
+  "name": "voting-system",
+  "description": "Create your own voting system and review",
+  "main": "main.js",
+  "authors": [
+    "Indrajit"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.6.5"
+  }
+}
