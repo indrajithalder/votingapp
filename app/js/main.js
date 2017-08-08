@@ -1,18 +1,18 @@
-(function(){
+/*(function(){
   'use strict';
-
-  angular.module('votingApp',['ngRoute'])
+*/
+var votingApp = angular.module('votingApp',['ngRoute'])
   .config([
     '$locationProvider',
     '$routeProvider',
     '$httpProvider',function($locationProvider, $routeProvider, $httpProvider){
       $routeProvider.when('/',{
-        controller:'controller/dashboardController.js',
+        controller:'dashboardController',
         templateUrl:'partials/dashboard.html'
       })
       .when('/create',{
-        controller:'controller/createController.js',
+        controller:'createController',
         templateUrl:'partials/create.html'
       });
     }]);
-}())
+/*}())*/
