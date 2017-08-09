@@ -2,7 +2,7 @@ var express =  require('express');
 var app = express();
 var mongoose = require('mongoose');
 
-require('./middleware.js')(app, express);
+require('./server/config/middleware.js')(app, express);
 require('./server/route.js')(app, express);
 
 //var conn = mongoose.connect('mongodb://dbroot:dbroot@ds129043.mlab.com:29043/vote');

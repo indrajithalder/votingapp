@@ -1,0 +1,13 @@
+.option-wrapper{
+  position: relative;
+}
+.del{
+    position: absolute;
+    top: 16px;
+    color: red;
+    background-color: #CCCCCD;
+    padding: 0 5px;
+    border-radius: 17px;
+    right: -4px;
+    cursor: pointer;
+}
