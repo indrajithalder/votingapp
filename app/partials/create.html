@@ -6,15 +6,15 @@
     <form>
       <div class="form-group">
         <label for="votingname">Enter your voting Description</label>
-        <input type="text" class="form-control" ng-model="votingname" id="votingname">
+        <input type="text" class="form-control" ng-model="votingname" id="votingname" ng-keyup="checkActive()" required>
       </div>
       <div class="form-group option-wrapper" ng-repeat="votingOption in votingOptions">
         <label for="votingOption.id">Enter your option Description</label>
-        <input type="text" class="form-control" ng-model="votingOption.name" id="votingOption.id">
+        <input type="text" class="form-control" ng-model="votingOption.name" id="votingOption.id" ng-keyup="checkActive()" required>
         <div class="del" ng-click="deleteOption(votingOption.id)">X</div>
       </div>
       <button type="button" class="btn btn-default" ng-click="createOption()">Add option</button>
-      <button type="submit" class="btn btn-default">Publish</button>
+      <button type="submit" class="btn btn-default" ng-class="{'btn-success':submitActive}" ng-click="submitForm()">Publish</button>
     </form>
   </div>
 </div>
